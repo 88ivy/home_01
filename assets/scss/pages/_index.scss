@@ -1,3 +1,92 @@
-.index-title {
-  font-size: 100px;
+$hover_color:#650300;
+
+
+
+
+
+.h_banner{
+  background-image: url(../assets/images/home-header.png);
+  background-position: center;
+  background-size: cover;
+  padding: 296px 0;
+  text-align: right;
+} 
+.container .banner{
+  width: 98%;
 }
+
+.j_r{   
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 0;
+}
+h3{ 
+  font-weight: 500;
+  font-size: 36px;
+  color: #650300;
+}
+h2{
+font-size: 64px;
+color: #650300;
+font-weight: 700;
+}
+a.buy{
+font-size: 20px;
+color: #fff;
+padding: 6px 12px;
+background-color:  #AA0601;
+text-decoration: none;
+display: block;
+display: inline-flex;
+}
+a.buy:hover{
+color:  #fd0800;
+background-color: #650300;
+}
+
+
+  /*在 iPad 直式下變更樣式*/
+  @media(max-width:992px){
+
+    .container .banner{
+      width: 98%;
+    }
+
+    }
+
+    .h_banner{
+      background-image: url(../assets/images/home-header-sm.png);
+
+    } 
+
+ 
+  
+  
+    /*在 iPhone11 直式下變更樣式 */
+  @media(max-width: 767px){
+    .container {
+      max-width: 100%;
+      padding: 0 px;
+    }
+    .h_banner{
+      padding: 144px 0;
+      background-image: url(../assets/images/home-header-sm.png);
+     
+     h3{ 
+      font-size: 16px;
+     }
+      h2{
+      font-size: 24px;
+     }
+      a.buy{
+      margin-top: 8px;
+     }
+      a.buy:hover{
+      color: #ff0800;
+     }
+    } 
+  
+  }
