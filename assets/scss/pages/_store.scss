@@ -1,113 +1,117 @@
-select{
-    padding: 6px 238px 6px 12px ;
-    margin-left: 16px;
-    border: 1px solid ;
-    border-radius: 5px;
-    border: #d6d6d6 1px solid;
-
-}
 .store{
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 96px;
     padding-bottom: 32px;
 }
 
 h2.store_title{
- color:black;
- font-size: 48px;
- border-left: 8px solid #9F1213;
- padding-left: 16px;
- margin-bottom: 32px;
+    color:black;
+    font-size: 48px;
+    border-left: 8px solid #9F1213;
+    padding-left: 16px;
+    margin-bottom: 32px;
 }
  .store_form{
     display: flex;
     align-items: center;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
  }
+
+select{
+    padding: 6px 238px 6px 12px ;
+    margin-left: 16px;
+    border: 1px solid ;
+    border-radius: 5px;
+    border: #d6d6d6 1px solid;
+}
+
 
 .flex_wrap{
-   width: 100%;
-   padding: 0 -12px;
-   margin: 0 -12px;
-   display: flex;
-   flex-wrap: wrap;
-}
- .store_info{
-    width: 31%;
-    margin: 0 12px;
-    border: 1px solid #d6d6d6;
-    margin-bottom: 48px;
-    
- }
-
- .store_name{
-   width: 100%;
-   padding-top: 8px ;
-   padding-bottom: 8px;
-   padding-left: 24px;
-   border-bottom: 1px solid #d6d6d6;
- }
- .store_infos_list{
-   height: 30px;
- }
- .dp_flex {
+    width: 100%;
+    margin: 0px;
     display: flex;
+    flex-wrap: wrap;
+}
+.store_info{
+   width: 31%;
+   margin: 0 12px;
+   border: 1px solid #d6d6d6;
+   margin-bottom: 48px;
+
+     .store_name{
+        width: 100%;
+        padding-top: 8px ;
+        padding-bottom: 8px;
+        padding-left: 24px;
+        border-bottom: 1px solid #d6d6d6;
+      }
+      .store_infos_list{
+        height: 30px;
+       }
+       .dp_flex {
+         display: flex;
+       }
+      .align_items_c{
+        align-items: center;
+       }
+
+      .store_infos{
+        padding: 16px;
+       }
+      .store_info_more{
+        font-size: 19px;
+        color: #fff;
+        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        background-color: #000;
+        text-align: center;
+       }
  }
 
-
-.align_items_c{
-    align-items: center;
-  }
  .store_icon{
-  width: 20px;
-  height: 20px;
+    width: 20px;
+    height: 20px;
  }
-
  .p_r20{
     padding-right: 20px;
  }
  .p_l_8{
-  padding-left: 8px;
- }
- .store_infos{
-  padding: 16px;
-
- }
- .store_info_more{
-    font-size: 19px;
-    color: #fff;
-    width: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    background-color: #000;
-    text-align: center;
-
+    padding-left: 8px;
  }
  a{
-   color:#fff;
+    color:#fff;
  }
  a:hover{
-   color: rgb(255, 181, 181);
-   background-color: #9F1213;
+    color: rgb(255, 181, 181);
+    background-color: #9F1213;
   }
 
-    /*在 iPad 直式下變更樣式*/
-    @media(max-width:992px){
-
-      .store_info{
-         width: 47%;}
+ /*在 iPad 直式下變更樣式*/
+   @media(max-width:992px){
+     .store{
+       padding-top: 80px;
+     }
+     .store_info{
+       width: 47%;
+      }
+    } 
+  
+ /*在 iPhone11 直式下變更樣式 */
+   @media(max-width: 767px){
+     .store{
+       padding-top: 40px;
     }
-  
-  
-    /*在 iPhone11 直式下變更樣式 */
-  @media(max-width: 767px){
-
-   .store_info{
-      width: 100%;
-
- 
-   }
+     h2.store_title{
+       font-size: 24px;
+       margin-bottom: 24px;
+    }
+    .store_info{
+       width: 100%;
+       padding: 0;
+       margin-bottom: 24px;
+    }
  }
 
   

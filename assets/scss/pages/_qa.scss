@@ -1,0 +1,75 @@
+.qa{
+     width: 98%;
+     margin: 0 auto;
+     padding-top: 96px;
+     padding-bottom: 32px;
+
+   h2.qa_title{
+     color:black;
+     font-size: 48px;
+     border-left: 8px solid #9F1213;
+     padding-left: 16px;
+     margin-bottom: 32px;
+    }
+   .qa_list{
+      width: 100%;
+      padding-right: 0px;
+
+    }
+
+   .qa_qa{
+      font-size: 24px;
+      margin-bottom: 24px;
+      font-weight: 700;
+    }
+   .qa_q{
+      font-size: 20px;
+      margin-bottom: 8px;
+      font-weight: 700;
+   }
+   .qa_a{
+      font-size: 16px;
+      margin-bottom: 32px;
+   }
+}
+
+ /*在 iPad 直式下變更樣式*/
+    @media(max-width:992px){
+      .qa{
+        padding-top: 80px;
+        padding-bottom: 32px;
+
+         h2.qa_title{
+           color:black;
+           font-size: 48px;
+           margin-bottom: 24px;
+          font-weight: 700;
+         }   
+       .qa_qa{
+          font-weight: 700;
+         }
+       .qa{
+         width: 98%;
+        }
+      } 
+    }
+    
+    
+ /*在 iPhone11 直式下變更樣式 */
+    @media(max-width: 767px){
+
+     .qa{
+        padding-top: 40px;
+        margin-bottom: 24px;
+        h2.qa_title{ 
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 24px;
+       }     
+       .qa_list{
+          width: 100%;
+
+     }  
+    }  
+}
+
