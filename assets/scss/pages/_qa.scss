@@ -1,15 +1,10 @@
 .qa{
-     width: 98%;
-     margin: 0 auto;
+     width: 90%;
      padding-top: 96px;
      padding-bottom: 32px;
 
    h2.qa_title{
-     color:black;
-     font-size: 48px;
-     border-left: 8px solid #9F1213;
-     padding-left: 16px;
-     margin-bottom: 32px;
+      @include title;
     }
    .qa_list{
       width: 100%;
@@ -36,14 +31,13 @@
  /*在 iPad 直式下變更樣式*/
     @media(max-width:992px){
       .qa{
+        width: 98%;
+        margin: 0 auto;
         padding-top: 80px;
         padding-bottom: 32px;
 
          h2.qa_title{
-           color:black;
-           font-size: 48px;
            margin-bottom: 24px;
-          font-weight: 700;
          }   
        .qa_qa{
           font-weight: 700;
@@ -59,12 +53,11 @@
     @media(max-width: 767px){
 
      .qa{
+      width: 98%;
         padding-top: 40px;
         margin-bottom: 24px;
         h2.qa_title{ 
-        font-size: 24px;
-        font-weight: 700;
-        margin-bottom: 24px;
+         @include title_s;
        }     
        .qa_list{
           width: 100%;

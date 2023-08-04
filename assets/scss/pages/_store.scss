@@ -6,11 +6,7 @@
 }
 
 h2.store_title{
-    color:black;
-    font-size: 48px;
-    border-left: 8px solid #9F1213;
-    padding-left: 16px;
-    margin-bottom: 32px;
+  @include title;
 }
  .store_form{
     display: flex;
@@ -80,13 +76,18 @@ select{
  .p_l_8{
     padding-left: 8px;
  }
- a{
+ .store_info_more a{
     color:#fff;
  }
- a:hover{
+ .store_info_more a:hover{
     color: rgb(255, 181, 181);
     background-color: #9F1213;
   }
+
+
+
+
+
 
  /*在 iPad 直式下變更樣式*/
    @media(max-width:992px){
@@ -104,8 +105,7 @@ select{
        padding-top: 40px;
     }
      h2.store_title{
-       font-size: 24px;
-       margin-bottom: 24px;
+      @include title_s;
     }
     .store_info{
        width: 100%;
